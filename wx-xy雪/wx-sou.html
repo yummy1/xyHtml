@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html data-dpr="1" style="font-size: 100px;">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta content='target-densitydpi=device-dpi, width=640' name='viewport'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <title>秀阅网</title>
+    <link href="wx-css/wx-style.css" rel="stylesheet" type="text/css">
+    <link href="wx-css/swiper-3.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="topbg clear">
+    <a href="#" class="jt" style="width: 1.0rem; padding-top: 0.25rem"><img src="wx-images/backts.png"> </a>
+    <div class="rg">
+        <button class="btn"><img src="wx-images/search.png"> </button>
+        <input type="search" id="search" class="search" placeholder="秀阅搜索"style="width: 4.45rem">
+    </div>
+</div>
+
+<ul class="jhul clear">
+    <li><a href="#" class="mr">默认</a> </li>
+    <li>
+        <a href="#" class="jg">价格</a>
+        <div class="jhrg">
+            <a href="#" class="upjt"><img src="wx-images/upjt.png"> </a>
+            <a href="#" class="downjt"><img src="wx-images/downjt.png"> </a>
+        </div>
+    </li>
+    <li><a href="#" class="xl" style="border-right: none;">销量</a> </li>
+</ul>
+<!--以上是导航条-->
+
+
+<div class="content">
+    <div class="contwrap clear">
+        <a href="#">
+            <div class="contlt">
+                <img src="wx-images/producto.jpg">
+            </div>
+
+            <div class="contrg">
+                <p class="bt">飞机杯易清洗消毒液杀菌喷剂卫生成人情趣性用品...</p>
+                <div class="price"><span class="yh">￥65</span><span class="yj">￥128</span></div>
+                <ul class="bywrap clear">
+                    <li class="by" style="color: #fb8326">包邮</li>
+                    <li class="sc" style="width: 1.4rem">已售<span>0</span>件</li>
+                    <li class="wxjx" style="width: 0.8rem">微信精选</li>
+                </ul>
+
+            </div>
+        </a>
+    </div>
+
+    <div class="contwrap clear">
+        <a href="#">
+            <div class="contlt">
+                <img src="wx-images/producto.jpg">
+            </div>
+
+            <div class="contrg">
+                <p class="bt">飞机杯易清洗消毒液杀菌喷剂卫生成人情趣性用品...</p>
+                <div class="price"><span class="yh">￥65</span><span class="yj">￥128</span></div>
+                <ul class="bywrap clear">
+                    <li class="by" style="color: #fb8326">包邮</li>
+                    <li class="sc" style="width: 1.4rem">已售<span>0</span>件</li>
+                    <li class="wxjx" style="width: 0.8rem">微信精选</li>
+                </ul>
+
+            </div>
+        </a>
+    </div>
+
+    <div class="contwrap clear">
+        <a href="#">
+            <div class="contlt">
+                <img src="wx-images/producto.jpg">
+            </div>
+
+            <div class="contrg">
+                <p class="bt">飞机杯易清洗消毒液杀菌喷剂卫生成人情趣性用品...</p>
+                <div class="price"><span class="yh">￥65</span><span class="yj">￥128</span></div>
+                <ul class="bywrap clear">
+                    <li class="by" style="color: #fb8326">包邮</li>
+                    <li class="sc" style="width: 1.4rem">已售<span>0</span>件</li>
+                    <li class="wxjx" style="width: 0.8rem">微信精选</li>
+                </ul>
+
+            </div>
+        </a>
+    </div>
+
+    <div class="contwrap clear">
+        <a href="#">
+            <div class="contlt">
+                <img src="wx-images/producto.jpg">
+            </div>
+
+            <div class="contrg">
+                <p class="bt">飞机杯易清洗消毒液杀菌喷剂卫生成人情趣性用品...</p>
+                <div class="price clear"><span class="yh">￥65</span><span class="yj">￥128</span></div>
+                <ul class="bywrap clear">
+                    <li class="by" style="color: #fb8326">包邮</li>
+                    <li class="sc" style="width: 1.4rem">已售<span>0</span>件</li>
+                    <li class="wxjx" style="width: 0.8rem">微信精选</li>
+                </ul>
+
+            </div>
+        </a>
+    </div>
+
+</div>
+
+
+<script src="wx-js/jquery.min.js"></script>
+<script src="wx-js/jquery-1.11.2.min.js"></script>
+<script src="wx-js/jquery.touchSlider.js"></script>
+<script src="wx-js/lunbo.js"></script>
+
+<script src="wx-js/swiper.js"></script>
+    <script>
+    $('.landing').click(function () {
+        $('.zhe').css('display', 'block')
+        $('.deng').css('left', '0')
+    })
+    $('.zhe').click(function () {
+        $('.zhe').css('display', 'none')
+        $('.deng').css('left', '-4.6rem')
+    })
+    var mySwiper = new Swiper('.swiper-container', {
+        freeMode: true,
+        slidesPerView: 'auto',
+    });
+    var mySwiper = new Swiper('.c-banner .swiper-container', {
+        loop: true,
+        pagination: '.pagination',
+        autoplay: 5000,
+        autoplayDisableOnInteraction: false,
+    })
+</script>
+
+
+<!--<script src="wx-js/jquery.min.js"></script>-->
+</body>
+</html>

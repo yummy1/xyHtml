@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html data-dpr="1" style="font-size: 100px;">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta content='target-densitydpi=device-dpi, width=640' name='viewport'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <title>秀阅网</title>
+    <link href="wx-css/wx-style.css" rel="stylesheet" type="text/css">
+    <link href="wx-css/swiper-3.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="jhbg">
+    <div class="jhbox clear">
+         <a href="#" class="jt"><img src="wx-images/backts.png"> </a>
+         <p>商品详情</p>
+    </div>
+</div>
+<!--以上是top结构结束-->
+
+
+
+<!--以下是banner结构开始-->
+
+<div class="banners">
+    <div class="main_visuals">
+        <div class="flicking_cons">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+        </div>
+        <div class="main_images">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="wx-images/xq.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="wx-images/xq.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="wx-images/xq.jpg">
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:;" id="btn_prev"></a>
+            <a href="javascript:;" id="btn_next"></a>
+        </div>
+    </div>
+</div>
+<!--以上是banner结构结束-->
+
+
+<!--以下是内容区域结构开始-->
+<div class="xqcon">
+            <p class="xqp">[新品]飞机杯易清洗消毒液杀液杀菌喷剂卫生成...</p>
+   <div class="apply">
+      <div class="applywrap clear">
+          <ul>
+              <li>价格: <span>258.00</span></li>
+              <li>数量: <span>3</span></li>
+              <li class="applying">申请中</li>
+          </ul>
+          <div class="applyright">
+              <h2>280</h2>
+              <p>人已申请</p>
+          </div>
+      </div>
+   </div>
+
+
+    <div class="listwrap">
+        <ul class="listbox clear">
+            <li class="sqlc"><p>申请流程</p></li>
+            <li>1提交申请 <span><img src="wx-images/jts.png"> </span></li>
+            <li>2确认名单 <span><img src="wx-images/jts.png"> </span></li>
+            <li>3收货体验 <span><img src="wx-images/jts.png"> </span></li>
+            <li>4提交报告</li>
+        </ul>
+
+       <p class="title">免费试用活动说明：</p>
+        <ul class="listul">
+            <li>秀阅网注册用户均可参与免费试用，无门槛参与；</li>
+            <li>申请成功名单将会在活动结束后5个工作日内公布，将电话通知您；</li>
+            <li>收到货后7天内须提交真实的试用报告，无需返还试用品；</li>
+            <li>优质的试用报告可提升您的下次申请成功几率，不提交报告或者恶意诋毁的试用报告将会受到限制申请。</li>
+        </ul>
+    </div>
+
+    <div class="wxts clear">
+        <p><span class="tip">温馨提示</span></p>
+        <span class="active">您的活跃度越高，申请成功几率越大哦，建议您连续签到哦~</span>
+    </div>
+</div>
+
+<!--以下是图片详情-->
+
+<div class="tpxq">
+    <ul class="goods clear">
+        <li style=" border-bottom: 0.02rem solid #ef290e;"><a href="#">图文详情</a> </li>
+        <li><a href="#">商品参数</a> </li>
+    </ul>
+
+    <ul class="goodsxq">
+        <li><img src="wx-images/banner.jpg"></li>
+        <li><img src="wx-images/banner.jpg"></li>
+    </ul>
+
+
+</div>
+
+<div class="buy"><a href="#" class="ljsy">申请试用</a> <a href="#" class="libuy">立即购买</a> </div>
+
+<!--以下是jq-->
+<script src="wx-js/jquery.min.js"></script>
+<script src="wx-js/jquery-1.11.2.min.js"></script>
+<script src="wx-js/jquery.touchSlider.js"></script>
+
+<script>
+$(".main_visuals").hover(function(){
+$("#btn_prev,#btn_next").fadeIn()
+},function(){
+$("#btn_prev,#btn_next").fadeOut()
+});
+
+$dragBln = false;
+
+$(".main_images").touchSlider({
+flexible : true,
+speed : 30,
+btn_prev : $("#btn_prev"),
+btn_next : $("#btn_next"),
+paging : $(".flicking_cons a"),
+counter : function (e){
+$(".flicking_cons a").removeClass("on").eq(e.current-1).addClass("on");
+}
+});
+
+$(".main_images").bind("mousedown", function() {
+$dragBln = false;
+});
+
+$(".main_images").bind("dragstart", function() {
+$dragBln = true;
+});
+
+$(".main_images a").click(function(){
+if($dragBln) {
+return false;
+}
+})
+
+</script>
+</body>
+</html>

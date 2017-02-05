@@ -1,0 +1,1329 @@
+html,
+body,
+div,
+img,
+span,
+form,
+input,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    vertical-align: top;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*以上是样式重置*/
+body{
+    font-family: "Microsoft YaHei";
+    max-width: 6.4rem;
+    margin: 0 auto;
+
+    color: #666666;
+    font-size: 0.2rem;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.clear:after{
+    content: "";
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.clear{
+    clear: both;
+}
+
+/*以上是公共声明*/
+
+/**************************************以下是首页修饰开始**************************************/
+
+
+/*以上是top修饰开始*/
+.topbg{
+    width: 6.4rem;
+    background: #ef290e;
+}
+
+.logo{
+    float: left;
+    margin-left: 0.2rem;
+    padding: 0.2rem 0;
+}
+
+.rg{
+    position: relative;
+    float: right;
+}
+.search{
+    width: 4.30rem;
+    line-height: 0.44rem;
+    background: #ffffff;
+    border: 0.01rem solid #f0f0f0;
+    border-radius: 0.03rem 0;
+    margin:0.25rem 0.2rem 0.25rem 0;
+    border-left: none;
+    padding-left: 0.1rem;
+}
+
+input::-ms-input-placeholder{
+    padding-left: 0.15rem;
+    color: #a5a5a5;
+    font-size: 0.18rem;
+}
+input::-webkit-input-placeholder{
+    padding-left: 0.15rem;
+    color: #a5a5a5;
+    font-size: 0.2rem;
+}
+
+
+.btn{
+    position: relative;
+    top:0.25rem;
+    left:0.07rem;
+    width: 0.46rem;
+    height: 0.46rem;
+    border-radius: 0.03rem 0;
+    background: #ffffff;
+    border: 0.01rem solid #f0f0f0;
+    cursor: pointer;
+    border-right: none;
+}
+
+/*以上是top修饰结束*/
+
+/*以下是banner修饰开始*/
+.banner{
+    width: 6.4rem;
+    overflow: hidden;
+}
+div.flicking_con{
+    position:absolute;
+    top:1.45rem;
+    left:53%;
+    z-index:999;
+    width:3rem;
+    height:.21rem;
+    margin:.6rem 0 0 -.55rem;
+}
+div.flicking_con a{
+    float:left;
+    width:.21rem;
+    height:.21rem;
+    margin:0;padding:0;
+    background:url(../wx-images/quan.png) 0 0 no-repeat;
+    display:block;
+    text-indent:-10rem;
+    background-size: 100% 100%;
+}
+div.flicking_con a.on{
+    background:url(../wx-images/quans.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.main_visual{height:2.38rem;overflow:hidden;position:relative;}
+.main_image{height:2.38rem;overflow:hidden;position:relative;}
+.main_image ul{width:99.99rem;height:2.38rem;overflow:hidden;position:absolute;top:0;left:0}
+.main_image li{float:left;width:100%;height:2.38rem;}
+.main_image li span{display:block;width:100%;height:2.38rem}
+.main_image li a{display:block;width:100%;height:2.38rem}
+.main_image li img{
+    width: 6.4rem;
+}
+
+/*以上是banner修饰结束*/
+
+
+/*以下是专区修饰开始*/
+
+.zq-wrap{
+    width: 6.4rem;
+    height: 2.75rem;
+    background: #f1f1f1;
+}
+
+.zpbox{
+    width: 6.4rem;
+    height: 2.62rem;
+    background: #ffffff;
+    border-bottom: 0.02rem solid #cccccc;
+}
+
+.jh{
+    width: 3.1rem;
+   /* height: 2.62rem;*/
+    text-align: center;
+    border-right: 0.02rem solid #f0f0f0;
+    float: left;
+}
+
+.jh h2{
+    font-family: "方正兰亭中黑_GBK";
+    padding: 0.26rem 0;
+    color: #ef290e;
+}
+
+
+
+.jhrg{
+    float: left;
+    width: 3rem;
+
+}
+
+.ms{
+    border-bottom: 0.02rem solid #f0f0f0;
+}
+.msz{
+    float: left;
+    margin-left: 0.1rem;
+}
+
+.msz p{
+    color: #888888;
+}
+.ms h2{
+    font-family: "方正兰亭中黑_GBK";
+    padding-top: 0.26rem;
+}
+
+.ms h2 a{
+    color: #e0c71d;
+}
+.img{
+    float: right;
+    margin: 0.26rem 0 0.08rem 0;
+}
+/*以上是秒杀专区*/
+
+
+/*以下是免费专区*/
+
+.mfz{
+    float: left;
+    margin-left: 0.1rem;
+}
+
+.mfz p{
+    color: #888888;
+}
+.mfz h2{
+    font-family: "方正兰亭中黑_GBK";
+    padding-top: 0.26rem;
+    color: #c27faa;
+}
+
+.img{
+    float: right;
+    margin: 0.26rem 0 0.08rem 0;
+}
+
+/*以上是免费专区*/
+
+/*以上是专区修饰结束*/
+
+
+
+/*以下是精品推荐修饰开始*/
+.jpwrap{
+    width: 6.4rem;
+    padding-bottom: 0.13rem;
+    background: #f1f1f1;
+}
+
+.jpbox{
+    width: 6.4rem;
+    /*height: 3.8rem;*/
+    background: #ffffff;
+    border-bottom: 0.02rem solid #cccccc;
+}
+
+.navbar{
+    width: 6rem;
+    margin:auto;
+    padding: 0.26rem 0;
+}
+/*以下是静态滑动效果*/
+
+.swiper-wrapper li{
+    float: left;
+    margin:0 0.26rem;
+}
+
+.swiper-wrapper li p{
+    width: 2.51rem;
+    text-align: center;
+    margin-bottom: 0.2rem;
+}
+
+.swiper-wrapper li a{
+    color: #888888;
+}
+
+.swiper-container{
+    margin-top: 0!important;
+}
+/*以上是精品推荐修饰结束*/
+
+
+
+
+/*以下是微信精选修饰开始*/
+.icon li{
+    float: left;
+}
+
+.chwrap{
+    margin: 0.2rem 0;
+}
+
+.chlt{
+    width: 2rem;
+    height: 2rem;
+    border: 0.02rem solid #e2e2e2;
+    margin-left: 0.2rem;
+    float: left;
+}
+.chlt>img{
+    width: 2rem;
+    height: 2rem;
+}
+.chrg{
+    width: 3.8rem;
+    margin:0 0.2rem 0 0.15rem;
+    float: right;
+}
+
+/*.price{
+    margin-bottom: 0.2rem;
+}*/
+.bt{
+    font-size: 0.22rem;
+    color: #666666;
+    font-style: normal;
+    margin-bottom: 0.2rem;
+}
+
+.yh{
+    display: block;
+    font-size: 0.32rem;
+    color: #ef290e;
+    margin: 0.20rem 0;
+    float: left;
+}
+
+.yj{
+    float: left;
+    margin: 0.30rem 0 0 0.15rem;
+    text-decoration: line-through;
+    color: #bdbdbd;
+}
+
+.bywrap{
+    width:3.8rem ;
+    border-bottom: 0.02rem solid #c4c4c4;
+    padding-bottom: 0.22rem;
+}
+
+.bywrap li{
+    width: 0.76rem;
+    float: left;
+    text-align: center;
+}
+
+
+.bywrap li span{
+    color: #fb8326;
+}
+
+.wxwrap{
+    padding-bottom: .03rem;
+    background: #ffffff;
+
+}
+/*以上是微信精选修饰结束*/
+
+
+.footer{
+    width: 6.4rem;
+    height: 1rem;
+    border-top:0.02rem solid #cccccc;
+}
+
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 6.4rem;
+    background: #ffffff;
+}
+
+.footer li{
+    width: 2.1rem;
+    text-align: center;
+    padding: 0.13rem 0;
+    float: left;
+
+}
+
+.footer li a{
+    display: block;
+    color:#777777;
+    line-height: 0.3rem;
+    font-size: 0.18rem;
+}
+
+.home{
+    text-align: center;
+    color: #888888;
+}
+
+.home:hover{
+    color: #ef290e;
+}
+/*以上是footer修饰结束*/
+
+
+/********************************************以上是首页修饰结束******************************/
+
+
+/********************************************以下是尖货精选修饰开始******************************/
+
+.jhbg{
+    width: 6.4rem;
+    line-height: 0.8rem;
+    background: #f0f0f0;
+}
+.jhbox{
+    width: 6rem;
+    margin: auto;
+    background: #f0f0f0;
+}
+.jt{
+    width: 1.3rem;
+    height: 0.5rem;
+    display: block;
+    line-height: 0.21rem;
+    padding: 0.2rem 0;
+    float: left;
+}
+.jhbox p{
+    width: 3.5rem;
+    text-align: left;
+    float: right;
+    font-size: .26rem;
+    color: #333333;
+    margin-left: .98rem;
+}
+
+/*以上是top修饰结束*/
+
+.jhul{
+    width: 6.4rem;
+    /*height: 0.8rem;*/
+    border-bottom: 1px solid #abaaaa;
+}
+
+.jhul li{
+    float:left;
+    width: 2.12rem;
+    text-align: center;
+    padding: 0.2rem 0;
+    position: relative;
+}
+
+.jhul li a:hover{
+    color: #ef290e;
+
+}
+
+.mr,.jg,.xl{
+    display: block;
+    width: 2.12rem;
+    border-right: 0.01rem solid #abaaaa;
+    color: #777777;
+}
+
+.xl{
+    border-right: none !important;
+}
+
+
+.jg{
+}
+
+.upjt{
+    position: absolute;
+    bottom:0.12rem;
+    right:0.67rem;
+}
+
+.downjt{
+    position: absolute;
+    bottom:0.05rem ;
+    right:0.67rem;
+}
+
+/*以上是导航条*/
+
+
+.content{
+    width: 6rem;
+    margin: auto;
+}
+
+
+
+.contwrap{
+    margin: 0.2rem 0;
+}
+
+.contlt{
+    width: 2rem;
+    height: 2rem;
+    border: 0.02rem solid #e2e2e2;
+    float: left;
+}
+
+.contlt>img{
+    width: 2rem;
+    height: 2rem;
+}
+.contrg{
+    width: 3.8rem;
+    margin-left: 0.15rem;
+    float: right;
+}
+
+.bt{
+    font-size: 0.2rem;
+    color: #666666;
+    font-style: normal;
+}
+
+.yh{
+    display: block;
+    font-size: 0.3rem;
+    color: #ef290e;
+    margin: 0.2rem 0;
+    float: left;
+}
+
+.yj{
+    float: left;
+    margin: 0.30rem 0 0 0.15rem;
+    text-decoration: line-through;
+    color: #bdbdbd;
+}
+
+.bywrap{
+    width:3.8rem ;
+    border-bottom: 0.02rem solid #c4c4c4;
+    /*padding-bottom: 0.1rem;*/
+}
+
+.bywrap li{
+    width: 0.76rem;
+    float: left;
+    text-align: center;
+    color: #888888;
+}
+
+
+.bywrap li span{
+    color: #fb8326;
+}
+
+.wxwrap{
+    margin-bottom: 1.2rem;
+}
+
+/********************************************以上是尖货精选修饰结束******************************/
+
+
+/********************************************以下是秒杀专区修饰开始******************************/
+.shopwrap{
+    width: 6.4rem;
+    border-bottom: 0.01rem solid #cccccc;
+}
+
+.shop{
+    width: 6rem;
+    margin:0.2rem auto;
+}
+
+.time ul li{
+    float: left;
+    margin-left: 0.08rem;
+}
+
+.timet{
+    width: 0.38rem;
+    height: 0.29rem;
+    background: url("../wx-images/rio.png") top center no-repeat;
+    color: #ffffff;
+    font-size: 0.2rem;
+    line-height: 0.29rem;
+}
+
+.timet p{
+    width: 0.26rem;
+    text-align: center;
+}
+
+.timeth{
+    width: 0.28rem;
+    height: 0.29rem;
+    background: url("../wx-images/rith.png") top center no-repeat;
+    color: #ffffff;
+    font-size: 0.2rem;
+    line-height: 0.29rem;
+}
+
+.timeth p{
+    width: 0.26rem;
+    text-align: center;
+}
+
+.xs{
+    float: left;
+}
+
+.time{
+    float: right;
+}
+
+/*以上是top修饰*/
+
+.price p{
+    width: 0.45rem;
+    height: 0.25rem;
+    border-radius: 0.05rem;
+    float: left;
+    font-size: 0.16rem;
+    margin: 0.28rem 0.15rem 0 0;
+    background: #69c26a;
+    color: #ffffff;
+    text-align: center;
+    line-height: 0.25rem;
+}
+
+.tu{
+    height: 0.16rem;
+}
+
+
+.box{
+    width:1.5rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 0.08rem;
+    height: 6px;
+    /*margin:100px auto;*/
+}
+#bar,#baro,#bart,#barth{
+    display: block;
+    background: #fb7700;
+    float: left;
+    height: 100%;
+    text-align: center;
+    line-height: 25px;
+    color: #FFF;
+}
+
+
+
+.gd>p{
+    color: #abaaaa;
+    margin-bottom: 0.15rem;
+}
+
+.gd{
+    float: left;
+}
+
+.lj{
+    width: 0.9rem;
+    height: 0.32rem;
+    background: #fb8326;
+    border-radius: 0.05rem;
+    text-align: center;
+    line-height: 0.32rem;
+    color: #ffffff;
+    font-size: 0.18rem;
+    float: right;
+}
+
+.ljrg{
+    width: 3.3rem;
+    margin-left: 0.15rem;
+    float: right;
+    border-bottom: 0.02rem solid #c4c4c4;
+}
+
+.ljrg{
+    width: 3.8rem;
+    margin-left: 0.15rem;
+    float: right;
+}
+.yht{
+    display: block;
+    font-size: 0.3rem;
+    color: #ef290e;
+    margin: 0.16rem 0;
+    float: left;
+}
+
+.yjt{
+    float: left;
+    margin: 0.26rem 0 0 0.15rem;
+    text-decoration: line-through;
+    color: #bdbdbd;
+}
+
+/********************************************以上是秒杀专区修饰结束******************************/
+
+
+
+/********************************************以下是分类修饰开始******************************/
+
+.typewrap{
+    width: 6.4rem;
+    background: #f0f0f0;
+    padding-bottom: 0.23rem;
+
+}
+
+.typebox{
+    width: 5.55rem;
+    margin: 0 auto;
+}
+
+.typesear{
+    position: relative;
+    top:0.6rem;
+    left:0.1rem;
+}
+
+.typeleft{
+    width: 1.5rem;
+    background: #f0f0f0;
+    float: left;
+    height: 5rem;
+}
+
+.typeleft li{
+    width: 1.5rem;
+    line-height: 0.58rem;
+    text-align: center;
+    border-bottom: 0.01rem solid #cccccc;
+}
+.typeleft li a{
+    display: block;
+    width: 1.5rem;
+    height: 0.58rem;
+    color: #666666;
+}
+
+.typeleft li a:hover{
+    width: 1.5rem;
+    background: #ffffff;
+    color: #ef290e;
+}
+
+.typeright{
+    width:4.5rem ;
+    float: right;
+    margin:0.2rem 0.2rem 0 0;
+}
+
+.typeright li{
+    float: left;
+    margin-right: 0.2rem;
+}
+/********************************************以上是分类修饰结束******************************/
+
+
+/********************************************以下是免费试用修饰开始******************************/
+
+
+.num{
+    display: block;
+    font-size: 0.24rem;
+    color: #9e9e9e;
+    margin: 0.16rem 0;
+    float: left;
+}
+
+.fonts{
+    float: left;
+    margin: 0.20rem 0 0 0.12rem;
+    color: #9e9e9e;
+    font-family: "方正兰亭黑_GBK";
+    font-size: 0.24rem;
+}
+
+.sq{
+    color: #9e9e9e;
+    font-size: 0.24rem;
+    margin:0.15rem 0 0.20rem 0;
+}
+
+.ljsq{
+    width: 0.9rem;
+    height: 0.32rem;
+    background: #fb8326;
+    border-radius: 0.05rem;
+    text-align: center;
+    line-height: 0.32rem;
+    color: #ffffff;
+    font-size: 0.18rem;
+    float: right;
+    margin: 0.15rem 0 0.19rem 0;
+}
+
+/********************************************以上是免费试用修饰结束******************************/
+
+
+/********************************************以下是商品详情修饰开始******************************/
+
+.banners{
+    width: 6.4rem;
+    height: auto;
+}
+div.flicking_cons{
+    position:absolute;
+    top:5.3rem;
+    left:90%;
+    z-index:999;
+    width:3rem;
+    height:.21rem;
+    margin:.6rem 0 0 -.55rem;
+}
+div.flicking_cons a{
+    float:left;
+    width:.21rem;
+    height:.21rem;
+    margin:0;
+    padding:0;
+    background:url(../wx-images/quan.png) 0 0 no-repeat;
+    display:block;
+    text-indent:-10rem;
+    background-size: 100% 100%;
+}
+div.flicking_cons a.on{
+    background:url(../wx-images/quann.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.main_visuals{
+    height:6.4rem;
+    overflow:hidden;
+    position:relative;
+}
+.main_images{
+    height:6.4rem;
+    overflow:hidden;
+    position:relative;
+}
+.main_images ul{
+    width:99.99rem;
+    height:6.4rem;
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.main_images li{
+    float:left;
+    width:100%;
+    height:6.4rem;
+}
+.main_images li span{
+    display:block;
+    width:100%;
+    height:6.4rem
+;}
+.main_images li a{
+    display:block;
+    width:100%;
+    height:6.4rem;
+}
+.main_images li img{
+    width: 6.4rem;
+    height: 6.4rem;
+
+}
+
+/*以上是banner修饰结束*/
+
+/*以下是内容区域修饰开始*/
+.xqbox{
+    width:6rem;
+    margin: auto;
+}
+
+
+.xqbox p{
+    margin: 0.15rem 0;
+    color: #666666;
+}
+
+.number{
+    float: left;
+}
+.red{
+    color: #ef290e;
+    font-size: 0.22rem;
+}
+
+.ten{
+    display: inline-block;
+    text-decoration: line-through;
+    color: #888888;
+    font-size: 0.18rem;
+    margin:0.04rem 0 0 0.12rem;
+}
+
+.bao{
+    width: 0.44rem;
+    height: 0.26rem;
+    background: #ef290e;
+    display: inline-block;
+    font-size: 0.18rem;
+    margin:0.02rem 0 0 0.12rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 0.26rem;
+}
+
+
+.save{
+    float: right;
+}
+
+.save a{
+    color: #888888;
+}
+
+.sell{
+    color: #888888;
+    float:left;
+}
+
+.sell span{
+    color: #ef290e;
+}
+
+.adress{
+    float: right;
+}
+
+.adresswrap{
+    margin:0.15rem 0;
+}
+.gray{
+    width: 6.2rem;
+    background: #f0f0f0;
+    padding-left: 0.2rem;
+}
+.gray li{
+    float: left;
+    padding: 0.2rem 0;
+}
+/*以上是内容区域修饰结束*/
+
+
+/*以下是图片详情修饰开始*/
+
+.tpxq{
+    margin-bottom: 0.8rem;
+}
+.goods{
+    margin: 0.12rem 0;
+}
+
+.goods li{
+    float: left;
+    width: 3.2rem;
+    line-height: 0.45rem;
+    text-align: center;
+}
+
+.goods li a{
+    color: #666666;
+}
+
+.goodsxq{
+
+}
+.goodsxq li{
+   padding: 0.06rem 0;
+    border-bottom: 0.01rem solid #cccccc;
+}
+
+.goodsxq li img{
+    width: 100%;
+}
+
+.buy{
+    position: fixed;
+    bottom: 0;
+    width: 6.4rem;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    text-align: center;
+    background: #ef290e;
+}
+
+.buy a{
+    color: #ffffff;
+}
+
+.ljsy{
+    float: left;
+    display: block;
+    width: 3.2rem;
+    background: #fb8326;
+}
+
+.libuy{
+    float: left;
+    display: block;
+    width: 3.2rem;
+}
+/*以上是图片详情修饰结束*/
+
+
+/*以下是商品参数修饰开始*/
+.goodscs{
+    width: 6.4rem;
+}
+
+.goodscs li{
+    line-height: 0.6rem;
+    border-bottom: 0.01rem solid #dcdcdc;
+}
+
+.pp{
+    display: inline-block;
+    width: 1.2rem;
+    text-align: center;
+    line-height: 0.6rem;
+    background: #f0f0f0;
+    border-right:0.01rem solid #9e9e9e;
+}
+
+.pps{
+    margin-left: 0.3rem;
+}
+/*以上是商品参数修饰结束*/
+
+/********************************************以上是商品详情修饰结束******************************/
+
+
+/********************************************以下是商品详情修饰结束******************************/
+.xqp{
+    font-size: 0.22rem;
+    margin: 0.3rem 0 0.3rem 0.2rem;
+}
+
+.apply{
+    width: 6rem;
+    margin: 0 auto;
+    border:0.01rem solid #dcdcdc;
+}
+
+.applywrap{
+    width: 5.6rem;
+    margin: 0.2rem auto;
+}
+
+.applywrap ul{
+    float: left;
+    width: 2.4rem;
+    margin-left: 0.2rem;
+    border-right: 0.01rem solid #9e9e9e;
+}
+
+.applywrap ul li{
+    margin-bottom: 0.08rem;
+}
+
+.applying{
+    color: #fb7322;
+
+}
+
+.applywrap ul li span{
+    color:#fb7322 ;
+
+}
+
+.applyright{
+    float: left;
+   /* width: 2.6rem;*/
+    margin:0.2rem 0 0 1rem;
+}
+
+.applyright h2{
+    width: 0.82rem;
+    text-align: center;
+    font-size: 0.30rem;
+    color: #fb8326;
+}
+
+/*.listbox{
+    width: 6rem;
+    margin: auto;
+}*/
+
+.listbox li{
+    float: left;
+    /*text-align: left;*/
+    width: 1.26rem;
+    height: 0.37rem;
+    line-height: 0.37rem;
+
+}
+
+.listwrap{
+    margin: 0.2rem 0;
+}
+
+
+.sqlc{
+    width: 0.97rem;
+    height:0.37rem;
+    line-height: 0.37rem;
+    padding-left: 0.06rem;
+    color: #ffffff;
+    font-size: 0.18rem;
+    background: url("../wx-images/di.png") top center no-repeat;
+}
+.sqlc p{
+    width: 0.86rem;
+    padding-left:0.2rem;
+}
+
+.listbox li span{
+    display: inline-block;
+    padding-top: 0.08rem;
+    padding-left: 0.06rem;
+}
+.listul{
+    width:6rem;
+    margin: 0.2rem auto;
+
+}
+.listul li{
+    color: #9e9e9e;
+    margin-bottom: 0.08rem;
+    font-size: 0.18rem;
+    list-style: disc;
+    margin-left: 0.2rem;
+}
+
+.title{
+    width: 6rem;
+    margin:0.2rem auto;
+}
+.wxts{
+    width: 6rem;
+    margin: auto;
+    /*padding-bottom: 0.5rem;*/
+    /*line-height: 0.37rem;*/
+    background: #f0f0f0;
+}
+.wxts p{
+    float: left;
+    width: 0.97rem;
+    height:0.37rem;
+    line-height: 0.37rem;
+    padding-left: 0.05rem;
+    color: #ffffff;
+    font-size: 0.18rem;
+    background: url("../wx-images/di.png") top center no-repeat;
+}
+
+.active{
+    font-size: 0.18rem;
+}
+.tip {
+    width: 0.86rem;
+    padding-left:0.07rem;
+}
+
+.active{
+    float: left;
+    display: inline-block;
+    line-height: 0.37rem;
+}
+
+/********************************************以上是商品详情修饰结束******************************/
+
+
+/********************************************以下是选择分类修饰开始******************************/
+
+.kc{
+    float: left;
+    margin: 0.30rem 0 0 0.15rem;
+    color: #bdbdbd;
+    text-decoration: none;
+}
+.color ul{
+    margin: 0.2rem 0;
+}
+.color ul li{
+    width: 1.83rem;
+    line-height: 0.44rem;
+    border: 0.01rem solid #dcdcdc;
+    text-align: center;
+    float: left;
+    margin:0 0 0.2rem 0.2rem;
+}
+
+.color ul li a{
+    width: 1.83rem;
+    line-height: 0.44rem;
+    display: block;
+    color: #888888;
+}
+
+.color ul li a:hover{
+
+    background: #ef290e;
+    color: #ffffff;
+}
+
+.contents{
+    width: 6rem;
+    margin: auto;
+    /*margin-bottom: 1.9rem;*/
+}
+
+.nu ul li{
+    width: 0.8rem;
+    height: 0.56rem;
+    line-height: 0.56rem;
+    border: 0.01rem solid #dcdcdc;
+    float: left;
+    text-align: center;
+}
+
+.nu p{
+    margin-bottom: 0.2rem;
+}
+.jian{
+    font-size: 0.36rem;
+}
+.jia{
+    font-size: 0.32rem;
+}
+/********************************************以上是选择分类修饰结束******************************/
+
+
+/********************************************以下是立即申请修饰开始******************************/
+
+.contrgs{
+    width: 3.8rem;
+    margin-left: 0.15rem;
+    float: right;
+}
+.contwrap{
+    border-bottom: 0.01rem solid #dcdcdc;
+    padding-bottom: 0.1rem;
+}
+
+.bts{
+    /*width:2rem;*/
+    font-size: 0.22rem;
+    color: #666666;
+    font-style: normal;
+    padding: 0.3rem 0;
+
+
+}
+
+.txtear{
+    width: 6rem;
+    height: 3rem;
+    background: #f0f0f0;
+}
+
+.reason,.email{
+    margin: 0.2rem 0;
+}
+
+.mail{
+    width: 6.1rem;
+    height: 0.44rem;
+    line-height: 0.44rem;
+    border: 0.01rem solid #dcdcdc;
+    background: #f0f0f0;
+}
+
+.mail::-ms-input-placeholder{
+    padding-left: 0.15rem;
+    color: #9e9e9e;
+    font-size: 0.18rem;
+}
+.mail::-webkit-input-placeholder{
+    padding-left: 0.15rem;
+    color: #9e9e9e;
+    font-size: 0.2rem;
+}
+
+textarea{
+    padding: 0.06rem;
+}
+
+.dibu{
+    width: 6.4rem;
+    height: 2rem;
+    background: url("../wx-images/hb.jpg") top center no-repeat;
+    margin: 0.2rem 0 0.8rem 0;
+}
+
+/*.map{
+    float: left;
+    margin:0.8rem 0 0 0.3rem;
+
+}*/
+
+.xj{
+  /*  float: left;*/
+    padding: 0.8rem 0 0 0.6rem;
+}
+
+.xj span{
+    font-size: 0.26rem;
+    color: #888888;
+    margin-left: 0.08rem;
+}
+/********************************************以上是立即申请修饰结束******************************/
+

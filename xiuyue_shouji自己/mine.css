@@ -1,0 +1,159 @@
+body{
+    background: #f5f5f5;
+}
+.xy_mine_layout{
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: absolute;
+}
+/*头部*/
+.xy_mine_header{
+    width: 100%;
+    height: 170px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.xy_mine_header .header_top{
+    width: 100%;
+    height: 65%;
+    background-color: #ff9900;
+}
+.xy_mine_header .header_top .shezhi{
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 2px;
+    right: 12px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    padding-top: 5px;
+}
+.xy_mine_header .header_top img{
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top:75px;
+    float: left;
+    left: 24px;
+    border-radius: 30px;
+    z-index: 1000;
+    border: 2px solid #fff;
+}
+.xy_mine_header .header_top .name{
+    position: absolute;
+    top:85px;
+    left: 95px;
+    color: #fff;
+}
+.xy_mine_header .header_top .dengji{
+    position: absolute;
+    top:85px;
+    left: 150px;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #e80000;
+
+}
+.xy_mine_header .header_bottom{
+    width: 100%;
+    height: 35%;
+    background-color: #fff;
+}
+.xy_mine_header .header_bottom .header_bottom_con{
+    margin-top: 10px;
+    width: 25%;
+    height: 60%;
+    float: right;
+    border-left: 1px solid #e0e0e0;
+}
+.xy_mine_header .header_bottom .header_bottom_con:last-child{
+    border-left: none;
+}
+.xy_mine_header .header_bottom .header_bottom_con .header_bottom_num{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+.xy_mine_header .header_bottom .header_bottom_con .header_bottom_text{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+/*订单*/
+.xy_mine_con1{
+    width: 100%;
+    height: 130px;
+    margin-top: 10px;
+    position: absolute;
+    top:170px;
+    left: 0;
+    background: #fff;
+}
+.xy_mine_con1 .order{
+    width: 100%;
+    height: 80px;
+    padding-top: 5px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.xy_mine_con1 .order a{
+    display: block;
+    width: 20%;
+    float: left;
+    padding-top: 10px;
+}
+.xy_mine_con1 .order a img{
+    display: block;
+    width: 40px;
+    height: 30px;
+    margin: 0 auto;
+}
+.xy_mine_con1 .order a p{
+    font-size: 12px;
+    text-align: center;
+}
+.other{
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.other img{
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+.other p{
+    font-size: 12px;
+    float: left;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.xy_mine_con2{
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    position: absolute;
+    top:310px;
+    left: 0;
+    background: #fff;
+}
+.xy_mine_con3{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    position: absolute;
+    top:520px;
+    left: 0;
+    background: #fff;
+}

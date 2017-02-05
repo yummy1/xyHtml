@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html data-dpr="1" style="font-size: 100px;">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta content='target-densitydpi=device-dpi, width=640' name='viewport'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <title>秀阅网</title>
+    <link href="wx-css/wx-style.css" rel="stylesheet" type="text/css">
+    <link href="wx-css/swiper-3.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="jhbg">
+    <div class="jhbox clear">
+         <a href="#" class="jt"><img src="wx-images/backts.png"> </a>
+         <p>商品详情</p>
+    </div>
+</div>
+<!--以上是top结构结束-->
+
+
+
+<!--以下是banner结构开始-->
+
+<div class="banners">
+    <div class="main_visuals">
+        <div class="flicking_cons">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+        </div>
+        <div class="main_images">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="wx-images/xq.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="wx-images/xq.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="wx-images/xq.jpg">
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:;" id="btn_prev"></a>
+            <a href="javascript:;" id="btn_next"></a>
+        </div>
+    </div>
+</div>
+<!--以上是banner结构结束-->
+
+
+<!--以下是内容区域结构开始-->
+<div class="xqcon">
+    <div class="xqbox">
+
+            <p>飞机杯易清洗消毒液杀液杀菌喷剂卫生成...</p>
+            <div class="xqprice clear">
+                <div class="number"><span class="red">￥59.9</span> <span class="ten">￥120</span> <span class="bao">包邮</span></div>
+                <div class="save"><a href="#"><img src="wx-images/save.png" > 收藏</a> </div>
+            </div>
+
+            <div class="adresswrap clear">
+                <div class="sell">已售<span>0</span>件</div>
+                <div class="adress">河南省郑州市</div>
+            </div>
+
+
+    </div>
+
+    <ul class="gray clear">
+        <li><img src="wx-images/iconth.png"> 保证正品 </li>
+        <li style="margin:0 1.33rem"><img src="wx-images/icont.png"> 保密发货 </li>
+        <li><img src="wx-images/iconone.png"> 售后保障 </li>
+    </ul>
+
+</div>
+
+<!--以下是图片详情-->
+
+<div class="tpxq">
+    <ul class="goods clear">
+        <li><a href="#">图文详情</a> </li>
+        <li style=" border-bottom: 0.02rem solid #ef290e;"><a href="#">商品参数</a> </li>
+    </ul>
+
+    <ul class="goodscs">
+        <li><span class="pp">品牌</span><span class="pps">EL</span></li>
+        <li><span class="pp">品牌</span><span class="pps">EL</span></li>
+        <li><span class="pp">品牌</span><span class="pps">EL</span></li>
+    </ul>
+</div>
+
+<div class="buy"><a href="#">立即购买</a> </div>
+
+<!--以下是jq-->
+<script src="wx-js/jquery.min.js"></script>
+<script src="wx-js/jquery-1.11.2.min.js"></script>
+<script src="wx-js/jquery.touchSlider.js"></script>
+
+<script>
+$(".main_visuals").hover(function(){
+$("#btn_prev,#btn_next").fadeIn()
+},function(){
+$("#btn_prev,#btn_next").fadeOut()
+});
+
+$dragBln = false;
+
+$(".main_images").touchSlider({
+flexible : true,
+speed : 30,
+btn_prev : $("#btn_prev"),
+btn_next : $("#btn_next"),
+paging : $(".flicking_cons a"),
+counter : function (e){
+$(".flicking_cons a").removeClass("on").eq(e.current-1).addClass("on");
+}
+});
+
+$(".main_images").bind("mousedown", function() {
+$dragBln = false;
+});
+
+$(".main_images").bind("dragstart", function() {
+$dragBln = true;
+});
+
+$(".main_images a").click(function(){
+if($dragBln) {
+return false;
+}
+})
+
+</script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+﻿/*公共属性开始*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, em, img, strong, dl, dt, dd, ol, ul, li, form, label, object, tbody, tfoot, thead, th {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*line-height: 23px;*/
+}
+
+input, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+}
+
+body {
+    font-family: "微软雅黑", Arial;
+    color: #333;
+    font-size: 80%;
+    background: #fff;
+    max-width: 640px;
+    margin: 0 auto;
+
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, em {
+    font-style: normal;
+    font-family: "微软雅黑", Arial;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "微软雅黑", Arial;
+    font-size: 0.875em;
+    font-weight: 700;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+button, input[type="submit"] {
+    cursor: pointer;
+}
+
+* + html img {
+    margin-bottom: 0 !important;
+}
+
+/* Fix IE7 */
+textarea {
+    font-family: "微软雅黑", Arial;
+    margin: 0;
+    padding: 0;
+    font-size: 0.875em;
+    overflow: auto;
+}
+
+:focus {
+    outline: 0;
+}
+
+.cfix:before, .cfix:after {
+    content: "";
+    display: table;
+}
+
+.cfix:after {
+    clear: both;
+}
+
+.cfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    font-family: "微软雅黑", Arial;
+    content: "\0020";
+    line-height: 0;
+    font-size: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.clearfix {
+    clear: both;
+    overflow: hidden;
+    visibility: visible;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #29a76a;
+    text-decoration: none;
+}
+
+span, p {
+    line-height: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+/*公共属性结束*/
+
+/*top部分开始*/
+
+
+/*banner部分开始*/
+.slider {
+    width: 640px;
+    margin: 0 auto;
+}
+/*banner部分结束*/
+
+
+/*product部分开始*/
+.swiper-slide{
+    width: 33.3%;
+
+}
+.swiper-slide div{
+    width: 100%;
+    height: 50%;
+}
+.swiper-slide div img{
+    width: 100%;
+}
+.swiper-slide .pro_cu{
+    font-family: "微软雅黑", Arial;
+    font-size: 1.2em;
+    line-height: 2.4em;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pro_gdcp{
+    font-family: "微软雅黑", Arial;
+    width: 100%;
+    font-size: 1.4em;
+    line-height: 2.4em;
+    border-bottom: 1px solid #cbcbcb;
+    text-align: center;
+}
+.pro_gdcp a img{
+    position: absolute;
+    padding-top: 3%;
+    margin-left: 2%;
+}
+/*product部分结束*/
+
+/*page内容结束*/
